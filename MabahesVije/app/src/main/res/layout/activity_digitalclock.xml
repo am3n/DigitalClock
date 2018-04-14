@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1b1d25"
+    android:gravity="center"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp">
+
+    <LinearLayout
+        android:id="@+id/linr_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/digital7"
+            android:text="21"
+            android:textColor="#5f97ff"
+            android:textSize="270sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/digital7"
+            android:text=":"
+            android:textColor="#5f97ff"
+            android:textSize="270sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/digital7"
+            android:text="02"
+            android:textColor="#5f97ff"
+            android:textSize="270sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/digital7"
+            android:text="20"
+            android:textColor="#5f97ff"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linr_top"
+        android:layout_alignLeft="@+id/linr_top"
+        android:layout_alignRight="@+id/linr_top"
+        android:layout_marginTop="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="september"
+            android:textColor="#5f97ff"
+            android:textSize="50sp"
+            android:fontFamily="@font/digital7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#5f97ff"
+            android:textSize="50sp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/digital7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012"
+            android:textColor="#5f97ff"
+            android:textSize="50sp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/digital7"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="monday"
+            android:textColor="#5f97ff"
+            android:textSize="50sp"
+            android:gravity="right"
+            android:fontFamily="@font/digital7"/>
+    </LinearLayout>
+
+</LinearLayout>
