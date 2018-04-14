@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#1b1d25">
 
     <RelativeLayout
@@ -18,7 +19,7 @@
             android:maxLines="1"
             android:text="21"
             android:textColor="#5f97ff"
-            android:textSize="270sp" />
+            android:textSize="200sp" />
 
         <TextView
             android:id="@+id/colon"
@@ -29,7 +30,7 @@
             android:fontFamily="@font/digital7"
             android:text=":"
             android:textColor="#5f97ff"
-            android:textSize="270sp" />
+            android:textSize="200sp" />
 
         <TextView
             android:id="@+id/minute"
@@ -40,7 +41,7 @@
             android:maxLines="1"
             android:text="02"
             android:textColor="#5f97ff"
-            android:textSize="270sp" />
+            android:textSize="200sp" />
 
         <TextView
             android:id="@+id/second"
@@ -52,7 +53,7 @@
             android:fontFamily="@font/digital7"
             android:text="20"
             android:textColor="#5f97ff"
-            android:textSize="50sp" />
+            android:textSize="30sp" />
 
 
 
@@ -62,7 +63,7 @@
             android:layout_height="wrap_content"
             android:text="september"
             android:textColor="#5f97ff"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:fontFamily="@font/digital7"
             android:layout_below="@+id/hour"/>
 
@@ -72,7 +73,7 @@
             android:layout_height="wrap_content"
             android:text="10"
             android:textColor="#5f97ff"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:fontFamily="@font/digital7"
             android:layout_marginLeft="24dp"
             android:layout_below="@+id/hour"
@@ -84,7 +85,7 @@
             android:layout_height="wrap_content"
             android:text="2012"
             android:textColor="#5f97ff"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:layout_marginLeft="24dp"
             android:fontFamily="@font/digital7"
             android:layout_below="@+id/hour"
@@ -96,12 +97,41 @@
             android:layout_height="wrap_content"
             android:text="monday"
             android:textColor="#5f97ff"
-            android:textSize="50sp"
+            android:textSize="30sp"
             android:gravity="right"
             android:fontFamily="@font/digital7"
             android:layout_below="@+id/hour"
             android:layout_toRightOf="@+id/year"
             android:layout_alignRight="@+id/second"/>
+
+
+        <RadioGroup
+            android:id="@+id/rdb_gp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weekday"
+            android:layout_alignLeft="@+id/hour"
+            android:layout_alignRight="@+id/minute"
+            android:layout_marginTop="16dp">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdb_24h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="24 Hour"
+                android:textSize="30sp"
+                android:textColor="#8cb4ff"
+                app:buttonTint="#8cb4ff"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rdb_12h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="12 Hour"
+                android:textSize="30sp"
+                android:textColor="#8cb4ff"
+                app:buttonTint="#8cb4ff"/>
+        </RadioGroup>
 
     </RelativeLayout>
 
